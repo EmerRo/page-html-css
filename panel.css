@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background:  #415958;
+    color: aliceblue;
+    left: -200px;
+    transition: all 500ms linear;
+}
+#sidebar.active{
+    left: 0;
+}
+img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#sidebar ul li{
+    text-align: center;
+    border-bottom: 1px solid #69615D ;
+    padding: 15px;
+    cursor: pointer;
+    list-style: none;
+}
+#sidebar ul :hover{
+    background-color: #283E3A ;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 210px;
+    top: 20px;
+    color: #283E3A;
+    cursor: pointer;
+}
+#sidebar .toggle-btn span{
+    display: block;
+    text-align: center;
+    width: 40px;
+    font-size: 40px;
+}
